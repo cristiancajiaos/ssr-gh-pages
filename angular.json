@@ -44,6 +44,10 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
+            },
+            "outputPath": "dist/ssr-gh-pages",
+            "stylePreprocessorOptions": {
+              "includePaths": []
             }
           },
           "configurations": {
@@ -105,6 +109,9 @@
               "src/styles.scss"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
