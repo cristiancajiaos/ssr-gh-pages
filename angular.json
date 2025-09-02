@@ -113,6 +113,12 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
         }
+      },
+      "i18n": {
+        "sourceLocale": "es-CL",
+        "locales": {
+          "en": "src/locale/messages.en.xlf"
+        }
       }
     }
   }
