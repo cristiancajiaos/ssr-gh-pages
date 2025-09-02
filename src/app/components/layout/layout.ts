@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './layout.html',
   styleUrl: './layout.scss'
 })
-export class Layout {
+export class Layout implements OnInit {
+
+  public message: string = '';
+
+  ngOnInit(): void {
+    this.message = $localize`:bajada!Bajada de la vista principal@@postTitle:Descripción de las fotos`;
+  }
 
 }
