@@ -11,7 +11,7 @@ export class Layout implements OnInit {
   public message: string = '';
 
   ngOnInit(): void {
-    this.message = $localize`:bajada!Bajada de la vista principal@@postTitle:Descripción de las fotos`;
+    this.message = $localize`:bajada|Bajada de la vista principal@@postTitle:Descripción de las fotos`;
   }
 
 }
